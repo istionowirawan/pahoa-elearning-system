@@ -1,0 +1,325 @@
+<table width='100%' class='table table-bordered' >
+
+<?php
+$countNotMatch=0;
+
+$protaSK=0;
+$prosemSK=0;
+
+echo "<tr class='rpt_prosem_cek' >";
+echo "<td>No.SK</td>";
+echo "<td>Tatap Muka Prota</td>";
+echo "<td>Tatap Muka Prosem</td>";
+echo "<td>Status Match</td>";
+echo "</tr>";
+
+foreach($data_prota->result() as $dtProta) {
+	echo "<tr align='center' style='background-color:#E5E5E5;color:#605A81;' class='rpt_prosem_cek_detail' >";
+		echo "<td>".$dtProta->sk_no."</td>";
+		echo "<td>";
+		if($dtProta->semester==1) {
+			echo $dtProta->sk_sm1;
+			$protaSK=$dtProta->sk_sm1;
+		} else {
+			echo $dtProta->sk_sm2;
+			$protaSK=$dtProta->sk_sm2;
+		}
+		echo "</td>";
+		
+		$q1 = "SELECT * FROM (
+			SELECT a.id, a.id_sk, b.kd_id, b.sk_no, SUM(b.week1+b.week2+b.week3+b.week4+b.week5) as jml_meet 
+			FROM trx_skkd_kd a
+			LEFT JOIN trx_prosem_detail b
+			ON a.id=b.kd_id
+			WHERE a.id_sk='".$dtProta->id_sk."'
+			AND a.semester='".$dtProta->semester."'
+			GROUP BY id_sk) as t1
+			";
+			$query1 = $this->db->query($q1);
+		//echo $q1;
+		
+		$q2 = "SELECT * FROM (
+			SELECT a.id, a.id_sk, b.kd_id, b.sk_no, SUM(b.week1+b.week2+b.week3+b.week4+b.week5) as jml_meet 
+			FROM trx_skkd_kd a
+			LEFT JOIN trx_prosem_uji b
+			ON a.id=b.kd_id
+			WHERE a.id_sk='".$dtProta->id_sk."'
+			AND a.semester='".$dtProta->semester."'
+			GROUP BY id_sk) as t1
+			";
+			$query2 = $this->db->query($q2);
+		
+		$totKD_alokasi_waktu = $query1->row(0)->jml_meet + $query2->row(0)->jml_meet;
+		
+		echo "<td>" . $totKD_alokasi_waktu . "</td>";
+		$prosemSK = $totKD_alokasi_waktu;
+		
+		echo "<td>";
+		if($protaSK == $prosemSK) {
+			echo " <label class='match'>Match</label>";
+		} else {
+			
+			if($protaSK > $prosemSK) {
+				echo " <label title='Jumlah TM di Prota lebih besar daripada di TM di Prosem' class='not-match'>Not Match</label>";
+				$countNotMatch++;
+			} else if($protaSK < $prosemSK) {
+				echo " <label title='Jumlah TM di Prota lebih kecil daripada di TM di Prosem' class='not-match'>Not Match</label>";
+				$countNotMatch++;
+			} else {
+				echo " <label class='match'>Match</label>";
+			}
+			
+		}
+		echo "</td>";
+	echo "</tr>";
+}
+
+if($countNotMatch==0) {
+?>
+
+<tr><td colspan='4' align='right'>
+	<img id='btnPDF_prosem' src='<?php echo base_url(); ?>icons/pdf-export.png' class='img_export_pdf' align='right' title='Export Prosem to PDF' >
+</td></tr></table>
+		
+<table class="table table-bordered" >
+	
+	<tr align="center" style='background-color:#8296AD;color:white;' >
+		<td rowspan="3" style="vertical-align:middle" >No.SK</td>
+		<td rowspan="3" style="vertical-align:middle">No.KD</td>
+		<td rowspan="3" style="vertical-align:middle">Kompetensi Dasar</td>
+		<td rowspan="3" style="vertical-align:middle">Jumlah Indikator</td>
+		<td rowspan="3" style="vertical-align:middle">Jam Tatap Muka</td>
+		<td colspan="30" style="vertical-align:middle">Bulan dan minggu efektif belajar</td>
+	</tr>
+	
+	<tr align="center" style='background-color:#8296AD;color:white;' >
+		<?php
+		$jmlBulan=0;
+		foreach($data_bulan->result() as $object) {
+			echo "<td colspan='5' >";
+			echo $object->bulan;
+			$jmlBulan++;
+			echo "</td>";
+		}
+		
+		?>
+	</tr>
+	
+	<tr align="center" style='background-color:#8296AD;color:white;' >
+		<?php
+		for ($b=0; $b < 5 * $jmlBulan; $b++) {
+			echo "<td>".(($b%($jmlBulan-1))+1) ."</td>";
+		}
+		?>
+	</tr>
+	
+	<?php
+	$nourut=1;
+	$totalKD = 0;
+	$col_jml_indi=0;
+	$nosk=999;
+	$skid=999;
+	$nomorUjiKompetensi=1;
+	$tampilsk=true;
+	
+	$totJmlIndi=0;
+	
+	$colNo=0;
+	$arCol = array();
+	$GLOBALS['arColUji'] = array();
+	$GLOBALS['totJmlTatapMuka']=0;
+	
+	for ($b=0; $b<5* $jmlBulan; $b++) {
+		$arCol[$b]=0;
+		
+		global $arColUji;
+		$arColUji[$b]=0;
+	}
+	
+	
+	//---------------------------------------------------------------------------------------------------------
+	foreach($data_prosem->result() as $object) {
+		if($nourut==1){
+			$nosk=$object->sk_no;
+			$skid=$object->id;
+			$tampilsk=true;
+		}
+		if($nosk!=$object->sk_no) {
+			$nosk=$object->sk_no;
+			$skid=$object->id;
+			$tampilsk=true;
+		}
+		
+		echo "<tr align='center'>";
+		echo "<td title='Semester".$object->semester."'>".$object->sk_no."</td>";
+		echo "<td title='kd_id".$object->kd_id."'>".$object->kd_no."</td>";
+		echo "<td align='left'>".$object->kd_detail."</td>";
+		
+		echo "<td>".$object->jml_indi."</td>";
+		$totJmlIndi+=$object->jml_indi;
+		
+		echo "<td>";
+		$rowJmlah = 0;
+		foreach($prosem_detail->result() as $row) {
+			if($object->kd_id==$row->kd_id) {
+				$rowJmlah+=$row->jml;
+			}
+		}
+		echo $rowJmlah;
+		global $totJmlTatapMuka;
+		$totJmlTatapMuka+=$rowJmlah;
+		//echo "<label id='txtTotalTMsk".$object->sk_no."kd".$object->kd_no."' title='txtTotalTMsk".$object->sk_no."kd".$object->kd_no."' ></label>";
+		echo "</td>";
+		$col_jml_indi+=$object->jml_indi;
+		
+		$colNo=0;
+		for ($b=0; $b<5* $jmlBulan; $b++) {
+			echo "<td>";
+			
+			$smsTbh = ($object->semester==1?6:0);
+			$bln = ceil(($b+1)/5) + $smsTbh;
+			$mgu = (($b%($jmlBulan-1))+1);
+			
+			$adadata = 0;
+			foreach($prosem_detail->result() as $row) {
+				if($row->kd_id==$object->kd_id && $bln==$row->bulan) {
+					//echo $object->kd_id . "/" . $bln . "/" . $mgu . " == " . $row->kd_id . "/" . $row->bulan . "<br>";
+					$dataWeek = "";
+					if($mgu==1) {
+						$dataWeek=$row->week1;
+					} else if ($mgu==2) {
+						$dataWeek=$row->week2;
+					} else if ($mgu==3) {
+						$dataWeek=$row->week3;
+					} else if ($mgu==4) {
+						$dataWeek=$row->week4;
+					} else if ($mgu==5) {
+						$dataWeek=$row->week5;
+					}
+					//echo kosong_jk_nol($dataWeek);
+					echo ($dataWeek>0?$dataWeek:"");
+					$adadata++;
+					
+					$arCol[$colNo]+=$dataWeek;
+					$colNo++;
+					break;
+				}
+			}
+			if($adadata==0) {
+				//echo  . "|" . $colNo;
+				$arCol[$colNo]+=0;
+				$colNo++;
+			} 
+			
+			echo "</td>";
+		}
+		$nourut++;
+		echo "</tr>";
+		
+		echo "<tr style='background-color:#EAF4FC;' align='center' >";
+		
+		//buat_row_ujikompetensi($nomorUjiKompetensi,$object->sk_no,$object->id,$jmlBulan,$object->semester,$prosem_uji_kom,$object->kd_id,$object->kd_no);
+		echo "<td colspan='4'>";
+			echo "Uji Kompetensi ".$nomorUjiKompetensi . " (SK".$object->sk_no."KD".$object->kd_no.")";
+		echo "</td>";
+		echo "<td><label id='txtTotUjiKompetensi".$nomorUjiKompetensi."' title='txtTotUjiKompetensi".$nomorUjiKompetensi."' >";
+		$nomorUjiKompetensi++;
+		
+		$rowJmlahUji = 0;
+		foreach($prosem_uji_kom->result() as $row) {
+			if($object->sk_no==$row->sk_no && $object->kd_id==$row->kd_id) {
+				$rowJmlahUji+=$row->jml;
+			}
+		}
+		echo $rowJmlahUji;
+		global $totJmlTatapMuka;
+		$totJmlTatapMuka+=$rowJmlahUji;
+		echo "</label></td>";
+		
+		$colNo=0;
+		for ($b=0; $b<5* $jmlBulan; $b++) {
+			echo "<td>";
+			
+			$smsTbh = ($object->semester==1?6:0);
+			$bln = ceil(($b+1)/5) + $smsTbh;
+			$mgu = (($b%($jmlBulan-1))+1);
+			
+			$adadata = 0;
+			foreach($prosem_uji_kom->result() as $row) {
+				if($object->sk_no==$row->sk_no && $bln==$row->bulan && $object->kd_id==$row->kd_id) {
+					$dataWeek = "";
+					if($mgu==1) {
+						$dataWeek=$row->week1;
+					} else if ($mgu==2) {
+						$dataWeek=$row->week2;
+					} else if ($mgu==3) {
+						$dataWeek=$row->week3;
+					} else if ($mgu==4) {
+						$dataWeek=$row->week4;
+					} else if ($mgu==5) {
+						$dataWeek=$row->week5;
+					}
+					
+					//echo kosong_jk_nol($dataWeek);
+					echo ($dataWeek>0?$dataWeek:"");
+					$adadata++;
+					
+					global $arColUji;
+					$arColUji[$colNo]+=$dataWeek;
+					
+					$colNo++;
+					break;
+				}
+			}
+			if($adadata==0) {
+				//echo "|" . $colNo;
+				
+				global $arColUji;
+				$arColUji[$colNo]+=0;
+				
+				$colNo++;
+			} 
+			echo "</td>";
+		}
+		
+		echo "</tr>";
+	}
+	
+	
+	function kosong_jk_nol($nilai) {
+		$result = $nilai;
+		if($nilai==0) {
+			$result="";
+		}
+		return $result;
+	}
+	
+	
+	echo "<tr align='center' style='background-color:#efe8e8;color:blue;' >";
+		echo "<td colspan='3'>Jumlah KD dan Tatap Muka</td>";
+		
+		echo "<td id='col_jml_indi'>".$totJmlIndi."</td>";
+		echo "<td id='col_jml_tm'>".$totJmlTatapMuka."</td>";
+					
+		for ($b=0; $b<5* $jmlBulan; $b++) {	
+			$namaTotal = "tot_col_".$b;
+			//echo "<td id='col_jml_mg1'><label id='".$namaTotal."' title='".$namaTotal."' >".$arCol[$b]."</label></td>";
+			echo "<td id='col_jml_mg1'><label id='".$namaTotal."' title='".$namaTotal."' >".($arColUji[$b]+$arCol[$b])."</label></td>";
+		}
+	echo "</tr>";
+	
+	
+	
+	//print_r($arColUji);
+} else {
+	echo "<div class='alert alert-warning' role='alert' style='text-align:center;' >";
+		echo "<span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span> ";
+		echo "Maaf Anda tidak bisa mencetak prosem, karena Jumlah Tatap Muka (TM) yang Anda input di Prota tidak sama dengan Jumlah Tatap 
+		Muka (TM) yang ada di Prosem, mohon dibenarkan dahulu jumlah tatap muka yang Not Match";
+	echo "</div>";
+}
+	?>
+	
+	
+	
+</table>

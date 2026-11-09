@@ -1,0 +1,949 @@
+<NotepadPlus>
+    <Project name="elearning">
+        <Folder name="Folder Name" />
+        <Folder name="application">
+            <Folder name="cache">
+                <File name="application\cache\.htaccess" />
+                <File name="application\cache\index.html" />
+            </Folder>
+            <Folder name="config">
+                <File name="application\config\autoload.php" />
+                <File name="application\config\config.php" />
+                <File name="application\config\constants.php" />
+                <File name="application\config\database.php" />
+                <File name="application\config\doctypes.php" />
+                <File name="application\config\foreign_chars.php" />
+                <File name="application\config\hooks.php" />
+                <File name="application\config\index.html" />
+                <File name="application\config\memcached.php" />
+                <File name="application\config\migration.php" />
+                <File name="application\config\mimes.php" />
+                <File name="application\config\profiler.php" />
+                <File name="application\config\routes.php" />
+                <File name="application\config\smileys.php" />
+                <File name="application\config\user_agents.php" />
+            </Folder>
+            <Folder name="controllers">
+                <File name="application\controllers\index.html" />
+                <File name="application\controllers\Login.php" />
+                <File name="application\controllers\Mainmenu.php" />
+                <File name="application\controllers\Welcome.php" />
+            </Folder>
+            <Folder name="core">
+                <File name="application\core\index.html" />
+            </Folder>
+            <Folder name="css" />
+            <Folder name="helpers">
+                <File name="application\helpers\index.html" />
+            </Folder>
+            <Folder name="hooks">
+                <File name="application\hooks\index.html" />
+            </Folder>
+            <Folder name="language">
+                <Folder name="english">
+                    <File name="application\language\english\index.html" />
+                </Folder>
+                <File name="application\language\index.html" />
+            </Folder>
+            <Folder name="libraries">
+                <File name="application\libraries\index.html" />
+            </Folder>
+            <Folder name="logs">
+                <File name="application\logs\index.html" />
+            </Folder>
+            <Folder name="models">
+                <File name="application\models\index.html" />
+                <File name="application\models\kelas_model.php" />
+                <File name="application\models\login_model.php" />
+                <File name="application\models\pelajaran_model.php" />
+                <File name="application\models\set_mapel_model.php" />
+                <File name="application\models\tahun_ajaran_model.php" />
+                <File name="application\models\user_model.php" />
+            </Folder>
+            <Folder name="third_party">
+                <File name="application\third_party\index.html" />
+            </Folder>
+            <Folder name="views">
+                <Folder name="errors">
+                    <Folder name="cli">
+                        <File name="application\views\errors\cli\error_404.php" />
+                        <File name="application\views\errors\cli\error_db.php" />
+                        <File name="application\views\errors\cli\error_exception.php" />
+                        <File name="application\views\errors\cli\error_general.php" />
+                        <File name="application\views\errors\cli\error_php.php" />
+                        <File name="application\views\errors\cli\index.html" />
+                    </Folder>
+                    <Folder name="html">
+                        <File name="application\views\errors\html\error_404.php" />
+                        <File name="application\views\errors\html\error_db.php" />
+                        <File name="application\views\errors\html\error_exception.php" />
+                        <File name="application\views\errors\html\error_general.php" />
+                        <File name="application\views\errors\html\error_php.php" />
+                        <File name="application\views\errors\html\index.html" />
+                    </Folder>
+                    <File name="application\views\errors\index.html" />
+                </Folder>
+                <File name="application\views\bootstrap-3.3.4-dist.zip" />
+                <File name="application\views\changepass_view.php" />
+                <File name="application\views\first.json" />
+                <File name="application\views\header_view.php" />
+                <File name="application\views\index.html" />
+                <File name="application\views\login_view.php" />
+                <File name="application\views\mainmenu_view.php" />
+                <File name="application\views\ms_kelas_view.php" />
+                <File name="application\views\ms_pelajaran_view.php" />
+                <File name="application\views\ms_tahunajaran_view.php" />
+                <File name="application\views\ms_user_view.php" />
+                <File name="application\views\session_leftmenu_view.php" />
+                <File name="application\views\trx_setting_gurumapel_view.php" />
+                <File name="application\views\trx_setting_skkd_view.php" />
+            </Folder>
+            <File name="application\.htaccess" />
+            <File name="application\index.html" />
+        </Folder>
+        <Folder name="bootstrap-3.3.4">
+            <Folder name="css">
+                <File name="bootstrap-3.3.4\css\bootstrap-theme.css" />
+                <File name="bootstrap-3.3.4\css\bootstrap-theme.css.map" />
+                <File name="bootstrap-3.3.4\css\bootstrap-theme.min.css" />
+                <File name="bootstrap-3.3.4\css\bootstrap.css" />
+                <File name="bootstrap-3.3.4\css\bootstrap.css.map" />
+                <File name="bootstrap-3.3.4\css\bootstrap.min.css" />
+                <File name="bootstrap-3.3.4\css\jquery.typeahead.css" />
+            </Folder>
+            <Folder name="fonts">
+                <File name="bootstrap-3.3.4\fonts\glyphicons-halflings-regular.eot" />
+                <File name="bootstrap-3.3.4\fonts\glyphicons-halflings-regular.svg" />
+                <File name="bootstrap-3.3.4\fonts\glyphicons-halflings-regular.ttf" />
+                <File name="bootstrap-3.3.4\fonts\glyphicons-halflings-regular.woff" />
+                <File name="bootstrap-3.3.4\fonts\glyphicons-halflings-regular.woff2" />
+            </Folder>
+            <Folder name="js">
+                <File name="bootstrap-3.3.4\js\bootstrap.js" />
+                <File name="bootstrap-3.3.4\js\bootstrap.min.js" />
+                <File name="bootstrap-3.3.4\js\jquery.typeahead.js" />
+                <File name="bootstrap-3.3.4\js\jquery.typeahead.min.js" />
+                <File name="bootstrap-3.3.4\js\npm.js" />
+                <File name="bootstrap-3.3.4\js\typeahead.min.js" />
+            </Folder>
+        </Folder>
+        <Folder name="css">
+            <File name="css\mystyle.css" />
+        </Folder>
+        <Folder name="db">
+            <File name="db\copy_mst_user.php" />
+            <File name="db\mst_user.sql" />
+            <File name="db\ms_pelajaran.sql" />
+            <File name="db\temp_pelajaran.sql" />
+        </Folder>
+        <Folder name="fonts">
+            <File name="fonts\Actor-Regular.ttf" />
+            <File name="fonts\Amaranth-Bold.ttf" />
+            <File name="fonts\Amaranth-BoldItalic.ttf" />
+            <File name="fonts\Amaranth-Italic.ttf" />
+            <File name="fonts\Amaranth-Regular.ttf" />
+            <File name="fonts\Stalemate-Regular.ttf" />
+        </Folder>
+        <Folder name="icons">
+            <File name="icons\administrator.png" />
+            <File name="icons\android.png" />
+            <File name="icons\arrow_up_32.png" />
+            <File name="icons\balance.png" />
+            <File name="icons\barcode.png" />
+            <File name="icons\bullet_go.png" />
+            <File name="icons\button-power.png" />
+            <File name="icons\calendar_view_month.png" />
+            <File name="icons\camera.png" />
+            <File name="icons\camera_small.png" />
+            <File name="icons\change_password.png" />
+            <File name="icons\chart_bar.png" />
+            <File name="icons\chart_bullseye.png" />
+            <File name="icons\chart_column.png" />
+            <File name="icons\chart_curve.png" />
+            <File name="icons\chart_organisation.png" />
+            <File name="icons\chart_stock.png" />
+            <File name="icons\chart_up_color.png" />
+            <File name="icons\client_account_template.png" />
+            <File name="icons\clipboard_empty.png" />
+            <File name="icons\clock_.png" />
+            <File name="icons\clock_red.png" />
+            <File name="icons\closelabel.gif" />
+            <File name="icons\cog.png" />
+            <File name="icons\computer.png" />
+            <File name="icons\control-180.png" />
+            <File name="icons\control-double-180.png" />
+            <File name="icons\control-double.png" />
+            <File name="icons\control.png" />
+            <File name="icons\control_end_blue.png" />
+            <File name="icons\control_fastforward_blue.png" />
+            <File name="icons\control_rewind_blue.png" />
+            <File name="icons\control_start_blue.png" />
+            <File name="icons\cross.png" />
+            <File name="icons\cut.png" />
+            <File name="icons\data_field.png" />
+            <File name="icons\date.png" />
+            <File name="icons\delete_32.png" />
+            <File name="icons\disk.png" />
+            <File name="icons\document_32.png" />
+            <File name="icons\door_in.png" />
+            <File name="icons\door_out.png" />
+            <File name="icons\education.png" />
+            <File name="icons\email.png" />
+            <File name="icons\group.png" />
+            <File name="icons\house.png" />
+            <File name="icons\left_16.png" />
+            <File name="icons\left_32.png" />
+            <File name="icons\loading.gif" />
+            <File name="icons\lock.png" />
+            <File name="icons\lock_open.png" />
+            <File name="icons\magnifier.png" />
+            <File name="icons\mail.png" />
+            <File name="icons\monitor.png" />
+            <File name="icons\multitool.png" />
+            <File name="icons\navigation-000-button.png" />
+            <File name="icons\navigation-090-button.png" />
+            <File name="icons\navigation-180-button.png" />
+            <File name="icons\navigation-270-button.png" />
+            <File name="icons\new.gif" />
+            <File name="icons\pencil_32.png" />
+            <File name="icons\phone.png" />
+            <File name="icons\phone_Android.png" />
+            <File name="icons\plus_16.png" />
+            <File name="icons\plus_32.png" />
+            <File name="icons\printer.png" />
+            <File name="icons\print_32.png" />
+            <File name="icons\reload_16.png" />
+            <File name="icons\reload_32.png" />
+            <File name="icons\report.png" />
+            <File name="icons\report_magnify.png" />
+            <File name="icons\reseller_programm.png" />
+            <File name="icons\resultset_first.png" />
+            <File name="icons\resultset_last.png" />
+            <File name="icons\resultset_next.png" />
+            <File name="icons\resultset_previous.png" />
+            <File name="icons\right_16.png" />
+            <File name="icons\right_32.png" />
+            <File name="icons\role.png" />
+            <File name="icons\safari_browser.png" />
+            <File name="icons\santa.png" />
+            <File name="icons\search_32.png" />
+            <File name="icons\set_security_question.png" />
+            <File name="icons\skins.png" />
+            <File name="icons\statistics.png" />
+            <File name="icons\telephone.png" />
+            <File name="icons\terminal.png" />
+            <File name="icons\Thumbs.db" />
+            <File name="icons\tick_32.png" />
+            <File name="icons\user-card.png" />
+            <File name="icons\user.png" />
+            <File name="icons\user_32.png" />
+            <File name="icons\user_blondy.png" />
+            <File name="icons\user_catwomen.png" />
+            <File name="icons\user_gray.png" />
+            <File name="icons\user_green.png" />
+            <File name="icons\user_info_32.png" />
+            <File name="icons\user_maid.png" />
+            <File name="icons\user_orange.png" />
+            <File name="icons\user_policeman.png" />
+            <File name="icons\user_red.png" />
+            <File name="icons\user_silhouette.png" />
+            <File name="icons\user_suit.png" />
+            <File name="icons\user_zorro.png" />
+        </Folder>
+        <Folder name="image">
+            <File name="image\bg.jpg" />
+            <File name="image\bg.psd" />
+            <File name="image\guest.png" />
+            <File name="image\logo.png" />
+            <File name="image\logo_icon.png" />
+            <File name="image\l_10646.ttf" />
+        </Folder>
+        <Folder name="jquery">
+            <File name="jquery\jquery.min.js" />
+        </Folder>
+        <Folder name="jquery_ui">
+            <Folder name="external">
+                <Folder name="jquery">
+                    <File name="jquery_ui\external\jquery\jquery.js" />
+                </Folder>
+            </Folder>
+            <Folder name="images">
+                <File name="jquery_ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+                <File name="jquery_ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+                <File name="jquery_ui\images\ui-bg_flat_10_000000_40x100.png" />
+                <File name="jquery_ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+                <File name="jquery_ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+                <File name="jquery_ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+                <File name="jquery_ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+                <File name="jquery_ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+                <File name="jquery_ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+                <File name="jquery_ui\images\ui-icons_222222_256x240.png" />
+                <File name="jquery_ui\images\ui-icons_228ef1_256x240.png" />
+                <File name="jquery_ui\images\ui-icons_ef8c08_256x240.png" />
+                <File name="jquery_ui\images\ui-icons_ffd27a_256x240.png" />
+                <File name="jquery_ui\images\ui-icons_ffffff_256x240.png" />
+            </Folder>
+            <File name="jquery_ui\index.html" />
+            <File name="jquery_ui\jquery-ui.css" />
+            <File name="jquery_ui\jquery-ui.js" />
+            <File name="jquery_ui\jquery-ui.min.css" />
+            <File name="jquery_ui\jquery-ui.min.js" />
+            <File name="jquery_ui\jquery-ui.structure.css" />
+            <File name="jquery_ui\jquery-ui.structure.min.css" />
+            <File name="jquery_ui\jquery-ui.theme.css" />
+            <File name="jquery_ui\jquery-ui.theme.min.css" />
+        </Folder>
+        <Folder name="sample">
+            <File name="sample\ANALISAPEMETAAN SK KD_XI IPA_BIOLOGI_RISSA.doc" />
+            <File name="sample\coba.php" />
+            <File name="sample\FORMAT SOAL PRAKTIK-rissa.doc" />
+            <File name="sample\KISI-KISI_UAS_KELAS XII_BIOLOGI_2015 .doc" />
+            <File name="sample\Prosem - 2 - 2014 kelas 12 IPS.xls" />
+            <File name="sample\Prota_Biologi_SMA_XI_Genap_20150312-115328_8814100691_PROTA XI.xls" />
+            <File name="sample\PROTA_PROSEM XI IPA 2013.xlsx" />
+            <File name="sample\RPP SOSIOLOGI SMSTR 2 kelas X.docx" />
+            <File name="sample\RPP_XI_IPA_BIOLOGI_RISSA.docx" />
+            <File name="sample\RUBRIK UJIAN PRAKTIK-rissa -.doc" />
+            <File name="sample\SILABUS_XI IPA_BIOLOGI_RISSA.docx" />
+        </Folder>
+        <Folder name="system">
+            <Folder name="core">
+                <Folder name="compat">
+                    <File name="system\core\compat\hash.php" />
+                    <File name="system\core\compat\index.html" />
+                    <File name="system\core\compat\mbstring.php" />
+                    <File name="system\core\compat\password.php" />
+                    <File name="system\core\compat\standard.php" />
+                </Folder>
+                <File name="system\core\Benchmark.php" />
+                <File name="system\core\CodeIgniter.php" />
+                <File name="system\core\Common.php" />
+                <File name="system\core\Config.php" />
+                <File name="system\core\Controller.php" />
+                <File name="system\core\Exceptions.php" />
+                <File name="system\core\Hooks.php" />
+                <File name="system\core\index.html" />
+                <File name="system\core\Input.php" />
+                <File name="system\core\Lang.php" />
+                <File name="system\core\Loader.php" />
+                <File name="system\core\Log.php" />
+                <File name="system\core\Model.php" />
+                <File name="system\core\Output.php" />
+                <File name="system\core\Router.php" />
+                <File name="system\core\Security.php" />
+                <File name="system\core\URI.php" />
+                <File name="system\core\Utf8.php" />
+            </Folder>
+            <Folder name="database">
+                <Folder name="drivers">
+                    <Folder name="cubrid">
+                        <File name="system\database\drivers\cubrid\cubrid_driver.php" />
+                        <File name="system\database\drivers\cubrid\cubrid_forge.php" />
+                        <File name="system\database\drivers\cubrid\cubrid_result.php" />
+                        <File name="system\database\drivers\cubrid\cubrid_utility.php" />
+                        <File name="system\database\drivers\cubrid\index.html" />
+                    </Folder>
+                    <Folder name="ibase">
+                        <File name="system\database\drivers\ibase\ibase_driver.php" />
+                        <File name="system\database\drivers\ibase\ibase_forge.php" />
+                        <File name="system\database\drivers\ibase\ibase_result.php" />
+                        <File name="system\database\drivers\ibase\ibase_utility.php" />
+                        <File name="system\database\drivers\ibase\index.html" />
+                    </Folder>
+                    <Folder name="mssql">
+                        <File name="system\database\drivers\mssql\index.html" />
+                        <File name="system\database\drivers\mssql\mssql_driver.php" />
+                        <File name="system\database\drivers\mssql\mssql_forge.php" />
+                        <File name="system\database\drivers\mssql\mssql_result.php" />
+                        <File name="system\database\drivers\mssql\mssql_utility.php" />
+                    </Folder>
+                    <Folder name="mysql">
+                        <File name="system\database\drivers\mysql\index.html" />
+                        <File name="system\database\drivers\mysql\mysql_driver.php" />
+                        <File name="system\database\drivers\mysql\mysql_forge.php" />
+                        <File name="system\database\drivers\mysql\mysql_result.php" />
+                        <File name="system\database\drivers\mysql\mysql_utility.php" />
+                    </Folder>
+                    <Folder name="mysqli">
+                        <File name="system\database\drivers\mysqli\index.html" />
+                        <File name="system\database\drivers\mysqli\mysqli_driver.php" />
+                        <File name="system\database\drivers\mysqli\mysqli_forge.php" />
+                        <File name="system\database\drivers\mysqli\mysqli_result.php" />
+                        <File name="system\database\drivers\mysqli\mysqli_utility.php" />
+                    </Folder>
+                    <Folder name="oci8">
+                        <File name="system\database\drivers\oci8\index.html" />
+                        <File name="system\database\drivers\oci8\oci8_driver.php" />
+                        <File name="system\database\drivers\oci8\oci8_forge.php" />
+                        <File name="system\database\drivers\oci8\oci8_result.php" />
+                        <File name="system\database\drivers\oci8\oci8_utility.php" />
+                    </Folder>
+                    <Folder name="odbc">
+                        <File name="system\database\drivers\odbc\index.html" />
+                        <File name="system\database\drivers\odbc\odbc_driver.php" />
+                        <File name="system\database\drivers\odbc\odbc_forge.php" />
+                        <File name="system\database\drivers\odbc\odbc_result.php" />
+                        <File name="system\database\drivers\odbc\odbc_utility.php" />
+                    </Folder>
+                    <Folder name="pdo">
+                        <Folder name="subdrivers">
+                            <File name="system\database\drivers\pdo\subdrivers\index.html" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_4d_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_4d_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_cubrid_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_cubrid_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_dblib_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_dblib_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_firebird_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_firebird_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_ibm_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_ibm_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_informix_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_informix_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_mysql_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_mysql_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_oci_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_oci_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_odbc_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_odbc_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_pgsql_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_pgsql_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_sqlite_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_sqlite_forge.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_sqlsrv_driver.php" />
+                            <File name="system\database\drivers\pdo\subdrivers\pdo_sqlsrv_forge.php" />
+                        </Folder>
+                        <File name="system\database\drivers\pdo\index.html" />
+                        <File name="system\database\drivers\pdo\pdo_driver.php" />
+                        <File name="system\database\drivers\pdo\pdo_forge.php" />
+                        <File name="system\database\drivers\pdo\pdo_result.php" />
+                        <File name="system\database\drivers\pdo\pdo_utility.php" />
+                    </Folder>
+                    <Folder name="postgre">
+                        <File name="system\database\drivers\postgre\index.html" />
+                        <File name="system\database\drivers\postgre\postgre_driver.php" />
+                        <File name="system\database\drivers\postgre\postgre_forge.php" />
+                        <File name="system\database\drivers\postgre\postgre_result.php" />
+                        <File name="system\database\drivers\postgre\postgre_utility.php" />
+                    </Folder>
+                    <Folder name="sqlite">
+                        <File name="system\database\drivers\sqlite\index.html" />
+                        <File name="system\database\drivers\sqlite\sqlite_driver.php" />
+                        <File name="system\database\drivers\sqlite\sqlite_forge.php" />
+                        <File name="system\database\drivers\sqlite\sqlite_result.php" />
+                        <File name="system\database\drivers\sqlite\sqlite_utility.php" />
+                    </Folder>
+                    <Folder name="sqlite3">
+                        <File name="system\database\drivers\sqlite3\index.html" />
+                        <File name="system\database\drivers\sqlite3\sqlite3_driver.php" />
+                        <File name="system\database\drivers\sqlite3\sqlite3_forge.php" />
+                        <File name="system\database\drivers\sqlite3\sqlite3_result.php" />
+                        <File name="system\database\drivers\sqlite3\sqlite3_utility.php" />
+                    </Folder>
+                    <Folder name="sqlsrv">
+                        <File name="system\database\drivers\sqlsrv\index.html" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_driver.php" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_forge.php" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_result.php" />
+                        <File name="system\database\drivers\sqlsrv\sqlsrv_utility.php" />
+                    </Folder>
+                    <File name="system\database\drivers\index.html" />
+                </Folder>
+                <File name="system\database\DB.php" />
+                <File name="system\database\DB_cache.php" />
+                <File name="system\database\DB_driver.php" />
+                <File name="system\database\DB_forge.php" />
+                <File name="system\database\DB_query_builder.php" />
+                <File name="system\database\DB_result.php" />
+                <File name="system\database\DB_utility.php" />
+                <File name="system\database\index.html" />
+            </Folder>
+            <Folder name="fonts">
+                <File name="system\fonts\index.html" />
+                <File name="system\fonts\texb.ttf" />
+            </Folder>
+            <Folder name="helpers">
+                <File name="system\helpers\array_helper.php" />
+                <File name="system\helpers\captcha_helper.php" />
+                <File name="system\helpers\cookie_helper.php" />
+                <File name="system\helpers\date_helper.php" />
+                <File name="system\helpers\directory_helper.php" />
+                <File name="system\helpers\download_helper.php" />
+                <File name="system\helpers\email_helper.php" />
+                <File name="system\helpers\file_helper.php" />
+                <File name="system\helpers\form_helper.php" />
+                <File name="system\helpers\html_helper.php" />
+                <File name="system\helpers\index.html" />
+                <File name="system\helpers\inflector_helper.php" />
+                <File name="system\helpers\language_helper.php" />
+                <File name="system\helpers\number_helper.php" />
+                <File name="system\helpers\path_helper.php" />
+                <File name="system\helpers\security_helper.php" />
+                <File name="system\helpers\smiley_helper.php" />
+                <File name="system\helpers\string_helper.php" />
+                <File name="system\helpers\text_helper.php" />
+                <File name="system\helpers\typography_helper.php" />
+                <File name="system\helpers\url_helper.php" />
+                <File name="system\helpers\xml_helper.php" />
+            </Folder>
+            <Folder name="language">
+                <Folder name="english">
+                    <File name="system\language\english\calendar_lang.php" />
+                    <File name="system\language\english\date_lang.php" />
+                    <File name="system\language\english\db_lang.php" />
+                    <File name="system\language\english\email_lang.php" />
+                    <File name="system\language\english\form_validation_lang.php" />
+                    <File name="system\language\english\ftp_lang.php" />
+                    <File name="system\language\english\imglib_lang.php" />
+                    <File name="system\language\english\index.html" />
+                    <File name="system\language\english\migration_lang.php" />
+                    <File name="system\language\english\number_lang.php" />
+                    <File name="system\language\english\pagination_lang.php" />
+                    <File name="system\language\english\profiler_lang.php" />
+                    <File name="system\language\english\unit_test_lang.php" />
+                    <File name="system\language\english\upload_lang.php" />
+                </Folder>
+                <File name="system\language\index.html" />
+            </Folder>
+            <Folder name="libraries">
+                <Folder name="Cache">
+                    <Folder name="drivers">
+                        <File name="system\libraries\Cache\drivers\Cache_apc.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_dummy.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_file.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_memcached.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_redis.php" />
+                        <File name="system\libraries\Cache\drivers\Cache_wincache.php" />
+                        <File name="system\libraries\Cache\drivers\index.html" />
+                    </Folder>
+                    <File name="system\libraries\Cache\Cache.php" />
+                    <File name="system\libraries\Cache\index.html" />
+                </Folder>
+                <Folder name="Javascript">
+                    <File name="system\libraries\Javascript\index.html" />
+                    <File name="system\libraries\Javascript\Jquery.php" />
+                </Folder>
+                <Folder name="Session">
+                    <Folder name="drivers">
+                        <File name="system\libraries\Session\drivers\index.html" />
+                        <File name="system\libraries\Session\drivers\Session_database_driver.php" />
+                        <File name="system\libraries\Session\drivers\Session_files_driver.php" />
+                        <File name="system\libraries\Session\drivers\Session_memcached_driver.php" />
+                        <File name="system\libraries\Session\drivers\Session_redis_driver.php" />
+                    </Folder>
+                    <File name="system\libraries\Session\index.html" />
+                    <File name="system\libraries\Session\Session.php" />
+                    <File name="system\libraries\Session\SessionHandlerInterface.php" />
+                    <File name="system\libraries\Session\Session_driver.php" />
+                </Folder>
+                <File name="system\libraries\Calendar.php" />
+                <File name="system\libraries\Cart.php" />
+                <File name="system\libraries\Driver.php" />
+                <File name="system\libraries\Email.php" />
+                <File name="system\libraries\Encrypt.php" />
+                <File name="system\libraries\Encryption.php" />
+                <File name="system\libraries\Form_validation.php" />
+                <File name="system\libraries\Ftp.php" />
+                <File name="system\libraries\Image_lib.php" />
+                <File name="system\libraries\index.html" />
+                <File name="system\libraries\Javascript.php" />
+                <File name="system\libraries\Migration.php" />
+                <File name="system\libraries\Pagination.php" />
+                <File name="system\libraries\Parser.php" />
+                <File name="system\libraries\Profiler.php" />
+                <File name="system\libraries\Table.php" />
+                <File name="system\libraries\Trackback.php" />
+                <File name="system\libraries\Typography.php" />
+                <File name="system\libraries\Unit_test.php" />
+                <File name="system\libraries\Upload.php" />
+                <File name="system\libraries\User_agent.php" />
+                <File name="system\libraries\Xmlrpc.php" />
+                <File name="system\libraries\Xmlrpcs.php" />
+                <File name="system\libraries\Zip.php" />
+            </Folder>
+            <File name="system\.htaccess" />
+            <File name="system\index.html" />
+        </Folder>
+        <Folder name="tests">
+            <Folder name="codeigniter">
+                <Folder name="core">
+                    <Folder name="compat">
+                        <File name="tests\codeigniter\core\compat\hash_test.php" />
+                        <File name="tests\codeigniter\core\compat\mbstring_test.php" />
+                        <File name="tests\codeigniter\core\compat\password_test.php" />
+                        <File name="tests\codeigniter\core\compat\standard_test.php" />
+                    </Folder>
+                    <File name="tests\codeigniter\core\Benchmark_test.php" />
+                    <File name="tests\codeigniter\core\Common_test.php" />
+                    <File name="tests\codeigniter\core\Config_test.php" />
+                    <File name="tests\codeigniter\core\Input_test.php" />
+                    <File name="tests\codeigniter\core\Lang_test.php" />
+                    <File name="tests\codeigniter\core\Loader_test.php" />
+                    <File name="tests\codeigniter\core\Model_test.php" />
+                    <File name="tests\codeigniter\core\Output_test.php" />
+                    <File name="tests\codeigniter\core\Security_test.php" />
+                    <File name="tests\codeigniter\core\URI_test.php" />
+                    <File name="tests\codeigniter\core\Utf8_test.php" />
+                </Folder>
+                <Folder name="database">
+                    <Folder name="query_builder">
+                        <File name="tests\codeigniter\database\query_builder\count_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\delete_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\distinct_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\empty_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\escape_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\from_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\get_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\group_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\insert_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\join_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\like_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\limit_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\order_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\select_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\truncate_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\update_test.php" />
+                        <File name="tests\codeigniter\database\query_builder\where_test.php" />
+                    </Folder>
+                    <File name="tests\codeigniter\database\DB_driver_test.php" />
+                    <File name="tests\codeigniter\database\DB_test.php" />
+                </Folder>
+                <Folder name="helpers">
+                    <File name="tests\codeigniter\helpers\array_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\captcha_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\cookie_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\date_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\directory_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\download_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\email_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\file_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\form_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\html_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\inflector_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\language_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\number_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\path_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\security_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\string_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\text_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\url_helper_test.php" />
+                    <File name="tests\codeigniter\helpers\xml_helper_test.php" />
+                </Folder>
+                <Folder name="libraries">
+                    <File name="tests\codeigniter\libraries\Calendar_test.php" />
+                    <File name="tests\codeigniter\libraries\Driver_test.php" />
+                    <File name="tests\codeigniter\libraries\Encryption_test.php" />
+                    <File name="tests\codeigniter\libraries\Encrypt_test.php" />
+                    <File name="tests\codeigniter\libraries\Parser_test.php" />
+                    <File name="tests\codeigniter\libraries\Session_test.php" />
+                    <File name="tests\codeigniter\libraries\Table_test.php" />
+                    <File name="tests\codeigniter\libraries\Typography_test.php" />
+                    <File name="tests\codeigniter\libraries\Upload_test.php" />
+                    <File name="tests\codeigniter\libraries\Useragent_test.php" />
+                </Folder>
+                <File name="tests\codeigniter\Setup_test.php" />
+            </Folder>
+            <Folder name="mocks">
+                <Folder name="core">
+                    <File name="tests\mocks\core\common.php" />
+                    <File name="tests\mocks\core\input.php" />
+                    <File name="tests\mocks\core\security.php" />
+                    <File name="tests\mocks\core\uri.php" />
+                    <File name="tests\mocks\core\utf8.php" />
+                </Folder>
+                <Folder name="database">
+                    <Folder name="config">
+                        <Folder name="pdo">
+                            <File name="tests\mocks\database\config\pdo\mysql.php" />
+                            <File name="tests\mocks\database\config\pdo\pgsql.php" />
+                            <File name="tests\mocks\database\config\pdo\sqlite.php" />
+                        </Folder>
+                        <File name="tests\mocks\database\config\mysql.php" />
+                        <File name="tests\mocks\database\config\mysqli.php" />
+                        <File name="tests\mocks\database\config\pgsql.php" />
+                        <File name="tests\mocks\database\config\sqlite.php" />
+                    </Folder>
+                    <Folder name="db">
+                        <File name="tests\mocks\database\db\driver.php" />
+                    </Folder>
+                    <Folder name="drivers">
+                        <File name="tests\mocks\database\drivers\mysql.php" />
+                        <File name="tests\mocks\database\drivers\mysqli.php" />
+                        <File name="tests\mocks\database\drivers\pdo.php" />
+                        <File name="tests\mocks\database\drivers\postgre.php" />
+                        <File name="tests\mocks\database\drivers\sqlite.php" />
+                    </Folder>
+                    <Folder name="schema">
+                        <File name="tests\mocks\database\schema\skeleton.php" />
+                    </Folder>
+                    <File name="tests\mocks\database\ci_test.sqlite" />
+                    <File name="tests\mocks\database\db.php" />
+                </Folder>
+                <Folder name="libraries">
+                    <File name="tests\mocks\libraries\driver.php" />
+                    <File name="tests\mocks\libraries\encrypt.php" />
+                    <File name="tests\mocks\libraries\encryption.php" />
+                    <File name="tests\mocks\libraries\session.php" />
+                    <File name="tests\mocks\libraries\table.php" />
+                </Folder>
+                <Folder name="uploads">
+                    <File name="tests\mocks\uploads\ci_logo.gif" />
+                </Folder>
+                <File name="tests\mocks\autoloader.php" />
+                <File name="tests\mocks\ci_testcase.php" />
+                <File name="tests\mocks\ci_testconfig.php" />
+            </Folder>
+            <Folder name="travis">
+                <Folder name="pdo">
+                    <File name="tests\travis\pdo\mysql.phpunit.xml" />
+                    <File name="tests\travis\pdo\pgsql.phpunit.xml" />
+                    <File name="tests\travis\pdo\sqlite.phpunit.xml" />
+                </Folder>
+                <File name="tests\travis\mysql.phpunit.xml" />
+                <File name="tests\travis\mysqli.phpunit.xml" />
+                <File name="tests\travis\pgsql.phpunit.xml" />
+                <File name="tests\travis\sqlite.phpunit.xml" />
+            </Folder>
+            <File name="tests\Bootstrap.php" />
+            <File name="tests\index.html" />
+            <File name="tests\phpunit.xml" />
+            <File name="tests\README.md" />
+        </Folder>
+        <Folder name="user_guide_src">
+            <Folder name="cilexer">
+                <Folder name="cilexer">
+                    <File name="user_guide_src\cilexer\cilexer\cilexer.py" />
+                    <File name="user_guide_src\cilexer\cilexer\__init__.py" />
+                </Folder>
+                <File name="user_guide_src\cilexer\README" />
+                <File name="user_guide_src\cilexer\setup.py" />
+            </Folder>
+            <Folder name="source">
+                <Folder name="contributing">
+                    <File name="user_guide_src\source\contributing\index.rst" />
+                </Folder>
+                <Folder name="database">
+                    <File name="user_guide_src\source\database\caching.rst" />
+                    <File name="user_guide_src\source\database\call_function.rst" />
+                    <File name="user_guide_src\source\database\configuration.rst" />
+                    <File name="user_guide_src\source\database\connecting.rst" />
+                    <File name="user_guide_src\source\database\db_driver_reference.rst" />
+                    <File name="user_guide_src\source\database\examples.rst" />
+                    <File name="user_guide_src\source\database\forge.rst" />
+                    <File name="user_guide_src\source\database\helpers.rst" />
+                    <File name="user_guide_src\source\database\index.rst" />
+                    <File name="user_guide_src\source\database\metadata.rst" />
+                    <File name="user_guide_src\source\database\queries.rst" />
+                    <File name="user_guide_src\source\database\query_builder.rst" />
+                    <File name="user_guide_src\source\database\results.rst" />
+                    <File name="user_guide_src\source\database\transactions.rst" />
+                    <File name="user_guide_src\source\database\utilities.rst" />
+                </Folder>
+                <Folder name="documentation">
+                    <File name="user_guide_src\source\documentation\ELDocs.tmbundle.zip" />
+                    <File name="user_guide_src\source\documentation\index.rst" />
+                </Folder>
+                <Folder name="general">
+                    <File name="user_guide_src\source\general\alternative_php.rst" />
+                    <File name="user_guide_src\source\general\ancillary_classes.rst" />
+                    <File name="user_guide_src\source\general\autoloader.rst" />
+                    <File name="user_guide_src\source\general\caching.rst" />
+                    <File name="user_guide_src\source\general\cli.rst" />
+                    <File name="user_guide_src\source\general\common_functions.rst" />
+                    <File name="user_guide_src\source\general\compatibility_functions.rst" />
+                    <File name="user_guide_src\source\general\controllers.rst" />
+                    <File name="user_guide_src\source\general\core_classes.rst" />
+                    <File name="user_guide_src\source\general\creating_drivers.rst" />
+                    <File name="user_guide_src\source\general\creating_libraries.rst" />
+                    <File name="user_guide_src\source\general\credits.rst" />
+                    <File name="user_guide_src\source\general\drivers.rst" />
+                    <File name="user_guide_src\source\general\environments.rst" />
+                    <File name="user_guide_src\source\general\errors.rst" />
+                    <File name="user_guide_src\source\general\helpers.rst" />
+                    <File name="user_guide_src\source\general\hooks.rst" />
+                    <File name="user_guide_src\source\general\index.rst" />
+                    <File name="user_guide_src\source\general\libraries.rst" />
+                    <File name="user_guide_src\source\general\managing_apps.rst" />
+                    <File name="user_guide_src\source\general\models.rst" />
+                    <File name="user_guide_src\source\general\profiling.rst" />
+                    <File name="user_guide_src\source\general\requirements.rst" />
+                    <File name="user_guide_src\source\general\reserved_names.rst" />
+                    <File name="user_guide_src\source\general\routing.rst" />
+                    <File name="user_guide_src\source\general\security.rst" />
+                    <File name="user_guide_src\source\general\styleguide.rst" />
+                    <File name="user_guide_src\source\general\urls.rst" />
+                    <File name="user_guide_src\source\general\views.rst" />
+                    <File name="user_guide_src\source\general\welcome.rst" />
+                </Folder>
+                <Folder name="helpers">
+                    <File name="user_guide_src\source\helpers\array_helper.rst" />
+                    <File name="user_guide_src\source\helpers\captcha_helper.rst" />
+                    <File name="user_guide_src\source\helpers\cookie_helper.rst" />
+                    <File name="user_guide_src\source\helpers\date_helper.rst" />
+                    <File name="user_guide_src\source\helpers\directory_helper.rst" />
+                    <File name="user_guide_src\source\helpers\download_helper.rst" />
+                    <File name="user_guide_src\source\helpers\email_helper.rst" />
+                    <File name="user_guide_src\source\helpers\file_helper.rst" />
+                    <File name="user_guide_src\source\helpers\form_helper.rst" />
+                    <File name="user_guide_src\source\helpers\html_helper.rst" />
+                    <File name="user_guide_src\source\helpers\index.rst" />
+                    <File name="user_guide_src\source\helpers\inflector_helper.rst" />
+                    <File name="user_guide_src\source\helpers\language_helper.rst" />
+                    <File name="user_guide_src\source\helpers\number_helper.rst" />
+                    <File name="user_guide_src\source\helpers\path_helper.rst" />
+                    <File name="user_guide_src\source\helpers\security_helper.rst" />
+                    <File name="user_guide_src\source\helpers\smiley_helper.rst" />
+                    <File name="user_guide_src\source\helpers\string_helper.rst" />
+                    <File name="user_guide_src\source\helpers\text_helper.rst" />
+                    <File name="user_guide_src\source\helpers\typography_helper.rst" />
+                    <File name="user_guide_src\source\helpers\url_helper.rst" />
+                    <File name="user_guide_src\source\helpers\xml_helper.rst" />
+                </Folder>
+                <Folder name="images">
+                    <File name="user_guide_src\source\images\appflowchart.gif" />
+                    <File name="user_guide_src\source\images\arrow.gif" />
+                    <File name="user_guide_src\source\images\ci-icon.ico" />
+                    <File name="user_guide_src\source\images\ci_logo.jpg" />
+                    <File name="user_guide_src\source\images\ci_logo_flame.jpg" />
+                    <File name="user_guide_src\source\images\file.gif" />
+                    <File name="user_guide_src\source\images\folder.gif" />
+                    <File name="user_guide_src\source\images\smile.gif" />
+                </Folder>
+                <Folder name="installation">
+                    <File name="user_guide_src\source\installation\downloads.rst" />
+                    <File name="user_guide_src\source\installation\index.rst" />
+                    <File name="user_guide_src\source\installation\troubleshooting.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_120.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_130.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_131.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_132.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_133.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_140.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_141.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_150.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_152.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_153.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_154.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_160.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_161.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_162.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_163.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_170.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_171.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_172.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_200.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_201.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_202.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_203.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_210.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_211.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_212.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_213.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_214.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_220.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_221.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_300.rst" />
+                    <File name="user_guide_src\source\installation\upgrade_b11.rst" />
+                    <File name="user_guide_src\source\installation\upgrading.rst" />
+                </Folder>
+                <Folder name="libraries">
+                    <File name="user_guide_src\source\libraries\benchmark.rst" />
+                    <File name="user_guide_src\source\libraries\caching.rst" />
+                    <File name="user_guide_src\source\libraries\calendar.rst" />
+                    <File name="user_guide_src\source\libraries\cart.rst" />
+                    <File name="user_guide_src\source\libraries\config.rst" />
+                    <File name="user_guide_src\source\libraries\email.rst" />
+                    <File name="user_guide_src\source\libraries\encrypt.rst" />
+                    <File name="user_guide_src\source\libraries\encryption.rst" />
+                    <File name="user_guide_src\source\libraries\file_uploading.rst" />
+                    <File name="user_guide_src\source\libraries\form_validation.rst" />
+                    <File name="user_guide_src\source\libraries\ftp.rst" />
+                    <File name="user_guide_src\source\libraries\image_lib.rst" />
+                    <File name="user_guide_src\source\libraries\index.rst" />
+                    <File name="user_guide_src\source\libraries\input.rst" />
+                    <File name="user_guide_src\source\libraries\javascript.rst" />
+                    <File name="user_guide_src\source\libraries\language.rst" />
+                    <File name="user_guide_src\source\libraries\loader.rst" />
+                    <File name="user_guide_src\source\libraries\migration.rst" />
+                    <File name="user_guide_src\source\libraries\output.rst" />
+                    <File name="user_guide_src\source\libraries\pagination.rst" />
+                    <File name="user_guide_src\source\libraries\parser.rst" />
+                    <File name="user_guide_src\source\libraries\security.rst" />
+                    <File name="user_guide_src\source\libraries\sessions.rst" />
+                    <File name="user_guide_src\source\libraries\table.rst" />
+                    <File name="user_guide_src\source\libraries\trackback.rst" />
+                    <File name="user_guide_src\source\libraries\typography.rst" />
+                    <File name="user_guide_src\source\libraries\unit_testing.rst" />
+                    <File name="user_guide_src\source\libraries\uri.rst" />
+                    <File name="user_guide_src\source\libraries\user_agent.rst" />
+                    <File name="user_guide_src\source\libraries\xmlrpc.rst" />
+                    <File name="user_guide_src\source\libraries\zip.rst" />
+                </Folder>
+                <Folder name="overview">
+                    <File name="user_guide_src\source\overview\appflow.rst" />
+                    <File name="user_guide_src\source\overview\at_a_glance.rst" />
+                    <File name="user_guide_src\source\overview\features.rst" />
+                    <File name="user_guide_src\source\overview\getting_started.rst" />
+                    <File name="user_guide_src\source\overview\goals.rst" />
+                    <File name="user_guide_src\source\overview\index.rst" />
+                    <File name="user_guide_src\source\overview\mvc.rst" />
+                </Folder>
+                <Folder name="tutorial">
+                    <File name="user_guide_src\source\tutorial\conclusion.rst" />
+                    <File name="user_guide_src\source\tutorial\create_news_items.rst" />
+                    <File name="user_guide_src\source\tutorial\index.rst" />
+                    <File name="user_guide_src\source\tutorial\news_section.rst" />
+                    <File name="user_guide_src\source\tutorial\static_pages.rst" />
+                </Folder>
+                <Folder name="_themes">
+                    <Folder name="sphinx_rtd_theme">
+                        <Folder name="static">
+                            <Folder name="css">
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\css\badge_only.css" />
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\css\theme.css" />
+                            </Folder>
+                            <Folder name="fonts">
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\fonts\fontawesome-webfont.eot" />
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\fonts\fontawesome-webfont.svg" />
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\fonts\fontawesome-webfont.ttf" />
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\fonts\fontawesome-webfont.woff" />
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\fonts\FontAwesome.otf" />
+                            </Folder>
+                            <Folder name="js">
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\js\oldtheme.js" />
+                                <File name="user_guide_src\source\_themes\sphinx_rtd_theme\static\js\theme.js" />
+                            </Folder>
+                        </Folder>
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\breadcrumbs.html" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\footer.html" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\layout.html" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\layout_old.html" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\LICENSE" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\search.html" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\searchbox.html" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\theme.conf" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\versions.html" />
+                        <File name="user_guide_src\source\_themes\sphinx_rtd_theme\__init__.py" />
+                    </Folder>
+                </Folder>
+                <File name="user_guide_src\source\changelog.rst" />
+                <File name="user_guide_src\source\conf.py" />
+                <File name="user_guide_src\source\DCO.rst" />
+                <File name="user_guide_src\source\index.rst" />
+                <File name="user_guide_src\source\license.rst" />
+            </Folder>
+            <File name="user_guide_src\Makefile" />
+            <File name="user_guide_src\README.rst" />
+        </Folder>
+        <File name=".gitignore" />
+        <File name=".travis.yml" />
+        <File name="composer.json" />
+        <File name="contributing.md" />
+        <File name="DCO.txt" />
+        <File name="index.php" />
+        <File name="license.txt" />
+        <File name="phpdoc.dist.xml" />
+        <File name="readme.rst" />
+        <File name="workspace_admguru.txt" />
+    </Project>
+</NotepadPlus>
